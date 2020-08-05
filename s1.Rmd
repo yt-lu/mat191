@@ -1,0 +1,38 @@
+---
+output: pdf_document
+---
+
+
+```{asis, include=1%in%s1}
+\question s1-1 
+
+\includegraphics[width=0.8\textwidth]{T1.png}
+
+          \begin{mcanswerslist}
+          \answer[correct] Matched-pairs design
+          \answer Single-blind design
+          \answer Completely randomized design
+          \answer Randomized block design
+          \end{mcanswerslist}
+```
+
+```{asis, include=2%in%s1}          
+\question s1-2
+         
+          \begin{mcanswerslist}
+          \answer[correct] Parameter.
+          \answer Statistics.
+          \end{mcanswerslist} 
+```
+
+```{asis, include=3%in%s1}
+\question s1-3
+
+\begin{tikzpicture}[xscale = 1, yscale = 0.5]
+\draw [->] (0,-4) -- (0,4);
+\draw [->] (-4, 0) -- (4, 0);
+\draw[red, ultra thick, domain = -4 : 4] plot (\x, { 3*\x/sqrt(pow(\x,2)+1) });
+
+\node at (3, -1) {$y = \dfrac{3x}{\sqrt{x^2 + 1} }$};
+\end{tikzpicture}\medskip
+```
