@@ -265,17 +265,39 @@ text-decoration: underline; font-weight: 600;
 }
 html, body {
 font-family: "Avenir Next";
-font-size: 18px;
+font-size: 20px;
 padding: 0;
+}
+def {
+color:red;
+font-weight: 600;
 }
 div.sage-all {
 font-size: 14px;
 }
 hr.left {
-width: 75%;
+width: 50%;
 border: 2px solid red;
 text-align: left;
 margin-left: 0;
+}
+.column {
+float: left;
+padding: 10px;
+}
+.left {
+width: 60%;
+}
+.right {
+width: 40%;
+}
+.third {
+width: 33%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
 }
 .ins {
 color: white;
@@ -295,6 +317,12 @@ border-radius: 10px;
 padding-left: 5px;
 font-weight: 600;
 color: red;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+z-index: 2;
+color: #000;
+background-color: #B2D7FF;
+border-color: #B2D7FF;
 }</style>
 
 
@@ -407,7 +435,7 @@ summary {
 <h1 class="title toc-ignore">MAT 191: Calculus I</h1>
 <h3 class="subtitle">Department of Mathematics, Mercer University</h3>
 <h4 class="author">Yuanting Lu</h4>
-<h4 class="date">Last Updated: 07/22/2020</h4>
+<h4 class="date">Last Updated: 08/21/2020</h4>
 
 </div>
 
@@ -416,16 +444,17 @@ summary {
 </hr>
 <div id="lecture-notes" class="section level2">
 <h2>Lecture Notes</h2>
+<ul>
+<li><a class="one" href="Lecture-limits.html"><em>Lecture 2:</em></a> Limits.</li>
+</ul>
 </div>
 <div id="project-assignments" class="section level2">
 <h2>Project Assignments</h2>
-<ul>
-<li><a class="one" href="limits.html"><em>Project 1:</em></a> Limits.</li>
-<li><a class="one" href="TanLine.html"><em>Project 2:</em></a> Tangent Lines.</li>
-<li><a class="one" href="curve.html"><em>Project 3:</em></a> Curve Sketching.</li>
-<li><a class="one" href="riemann.html"><em>Project 4:</em></a> Riemann Sum.</li>
-<li><a class="one" href="MVT.html"><em>Project 5:</em></a> Mean Value Theorem.</li>
-</ul>
+<!-- - <a class="one" href="limits.html">*Project 1:*</a> Limits. -->
+<!-- - <a class="one" href="TanLine.html">*Project 2:*</a> Tangent Lines. -->
+<!-- - <a class="one" href="curve.html">*Project 3:*</a> Curve Sketching. -->
+<!-- - <a class="one" href="riemann.html">*Project 4:*</a> Riemann Sum. -->
+<!-- - <a class="one" href="MVT.html">*Project 5:*</a> Mean Value Theorem. -->
 </div>
 
 
