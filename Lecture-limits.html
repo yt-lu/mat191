@@ -268,20 +268,10 @@ margin-left: 0;
 float: left;
 padding: 10px;
 }
-.left {
-width: 60%;
+.frame {
+background-color: aliceblue;
 }
-.right {
-width: 40%;
-}
-.third {
-width: 33%;
-}
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
+
 .ins {
 color: white;
 background-color: #5D6D7E;
@@ -289,6 +279,20 @@ padding-left: 2px;
 padding-top: 5px;
 padding-bottom: 3px;
 font-style: oblique;
+}
+.left {
+width: 60%;
+}
+.right {
+width: 40%;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.third {
+width: 33%;
 }
 
 .p-clist {
@@ -494,6 +498,12 @@ summary {
 <p><strong>Definition.</strong> Suppose <span class="math inline">\(f(x)\)</span> is defined on some open interval that contains <span class="math inline">\(c\)</span>, except possibly at <span class="math inline">\(c\)</span> itself. Then we write <span class="math display">\[
 \lim_{x\to c}f(x) = L
 \]</span> and say <def>“the limit of <span class="math inline">\(f(x)\)</span> equals <span class="math inline">\(L\)</span>, as <span class="math inline">\(x\)</span> approaches <span class="math inline">\(c\)</span>”</def> if we can make values of <span class="math inline">\(f(x)\)</span> arbitrarily close to <span class="math inline">\(L\)</span> by restricting <span class="math inline">\(x\)</span> to be sufficiently close to <span class="math inline">\(c\)</span> (on either side of <span class="math inline">\(c\)</span>) but not equal to <span class="math inline">\(c\)</span>.</p>
+<div class="frame">
+<p>
+<span class="math display"><span class="math display">\[\lim_{x\to c}f(x) = L \Longleftrightarrow \lim_{x\to c^-}f(x) = \lim_{x\to c^+}f(x) = L
+\]</span></span>
+</p>
+</div>
 <strong>Example 3.</strong> Evaluate the following limits based on the graph.
 <div class="row">
 <div class="column left">
