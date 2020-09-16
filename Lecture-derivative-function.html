@@ -448,6 +448,7 @@ summary {
 <li><a href="#differentiability">Differentiability</a></li>
 <li><a href="#higher-order-derivatives">Higher-order Derivatives</a></li>
 <li><a href="#exponential-function">Exponential Function</a></li>
+<li><a href="#practice-problems">Practice Problems</a></li>
 </ul>
 </div>
 
@@ -531,6 +532,57 @@ summary {
 <div id="exponential-function" class="section level2">
 <h2>Exponential Function</h2>
 <p><strong>Example 5</strong> Let <span class="math inline">\(f(x) = e^x\)</span>. Find <span class="math inline">\(f&#39;(x)\)</span>.</p>
+</div>
+<div id="practice-problems" class="section level2">
+<h2>Practice Problems</h2>
+<ol style="list-style-type: decimal">
+<li><p>Find the derivative of the following functions by the definition of derivative.</p>
+<ul>
+<li><span class="math inline">\(f(x)=x^2 - 2x^3\)</span></li>
+<li><span class="math inline">\(f(x)=\dfrac{1 - 2x}{3 + x}\)</span></li>
+</ul></li>
+<li><p>Find the derivative of the following functions by the derivative rules.</p>
+<ul>
+<li><span class="math inline">\(f(x)=x^{5/3} - x^{2/3}\)</span></li>
+<li><span class="math inline">\(f(x)=3e^x+x^e\)</span></li>
+<li><span class="math inline">\(f(x)=e^{x+2} + 1\)</span></li>
+<li><span class="math inline">\(f(x)=\sqrt x - \frac 1 x + \frac{1}{x^2}\)</span></li>
+<li><span class="math inline">\(f(x)=\dfrac{x^2 + 4x + 3}{\sqrt x}\)</span></li>
+<li><span class="math inline">\(f(x)=\pi^2\)</span></li>
+</ul></li>
+<li><p>Identify <span class="math inline">\(f(x)\)</span> and <span class="math inline">\(f&#39;(x)\)</span> on the following graphs.</p></li>
+</ol>
+<div class="sage-simple">
+<script type="text/x-sage">
+f = x^3 - 2 * x
+figa = plot(f, -1.5, 1.2, color = "black")
+figa += plot(diff(f,x), -1.5, 1.2, color = "orange")
+show(figa, aspect_ratio = 0.5, ymax = 2, ymin = -2)
+
+f = sin(x)
+figb = plot(f, -pi, pi, color = "orange")
+figb += plot(diff(f,x), -pi, pi, color = "black")
+show(figb, aspect_ratio = 1)
+</script>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Identify <span class="math inline">\(f(x), f&#39;(x)\)</span>, and <span class="math inline">\(f&#39;&#39;(x)\)</span> on the following graphs.</li>
+</ol>
+<div class="sage-simple">
+<script type="text/x-sage">
+f = x^4 - 4 * x^3 + 12
+figa = plot(f, -2, 3.5, color = "red")
+figa += plot(diff(f,x), -2, 3.5, color = "orange")
+figa += plot(diff(diff(f, x),x), -2, 3.5, color = "black")
+show(figa, aspect_ratio = 0.1, ymax = 50, ymin = -20)
+
+f = cos(x)
+figb = plot(f, -pi, pi, color = "orange")
+figb += plot(diff(f,x), -pi, pi, color = "black")
+figb += plot(diff(diff(f, x),x), -pi, pi, color = "red")
+show(figb, aspect_ratio = 1)
+</script>
+</div>
 </div>
 
 
